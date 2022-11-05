@@ -80,7 +80,7 @@ public class MainActivity extends AppCompatActivity {
         // AudioTrackのインスタンス生成
         mAudioTrack = new AudioTrack(AudioManager.STREAM_MUSIC, // 音楽再生用のオーディオストリーム
                 sampleRate, // サンプリングレート
-                AudioFormat.CHANNEL_OUT_MONO, // モノラル
+                AudioFormat.CHANNEL_OUT_STEREO, // ステレオ
                 AudioFormat.ENCODING_PCM_16BIT, // フォーマット
 //                maxSize,// 合計バッファサイズ
                 1024,// maxSizeだとエラーになってしまうので固定値を設定する。
